@@ -1,0 +1,22 @@
+{
+  "name": "upload-tool",
+  "version": "1.0.0",
+  "description": "upload service",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kibuniverse/upload-tool-server.git"
+  },
+  "keywords": [
+    "upload-tool"
+  ],
+  "author": "yankaizhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kibuniverse/upload-tool-server/issues"
+  },
+  "homepage": "https://github.com/kibuniverse/upload-tool-server#readme"
+}
