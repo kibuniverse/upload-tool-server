@@ -4,7 +4,9 @@
   "description": "upload service",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild --bundle --outfile=dist/index.js src/index.ts --platform=node --target=node16.13.1",
+    "build:dev": "esbuild --bundle --outfile=dist/index.js src/index.ts --platform=node --target=node16.13.1 --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/kibuniverse/upload-tool-server/issues"
   },
-  "homepage": "https://github.com/kibuniverse/upload-tool-server#readme"
+  "homepage": "https://github.com/kibuniverse/upload-tool-server#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.11",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/js-yaml": "^4.0.5",
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0"
+  }
 }
